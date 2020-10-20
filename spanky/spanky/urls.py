@@ -20,5 +20,5 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
-    path('', views.spanky, name="spanky"),
+    path('', views.spanky),
 ]

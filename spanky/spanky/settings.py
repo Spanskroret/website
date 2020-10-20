@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,9 +30,7 @@ ALLOWED_HOSTS = []
 
 # Application definition
 
-#DJANGO_APPS = [
-INSTALLED_APPS = [
-    'home.apps.HomeConfig',
+DJANGO_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -41,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 ]
 
-# LOCAL_APPS = [
-#    "spanky.spanky",
-#    "spanky.home",
-# ]
+LOCAL_APPS = [
+   "spanky",
+   "home",
+]
 
-# INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
+INSTALLED_APPS = DJANGO_APPS + LOCAL_APPS
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
