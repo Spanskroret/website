@@ -13,7 +13,7 @@ ul {
 }
 
 .bg-steel {
-  background-color: #5f788a;
+  background-color: #045f11;
 }
 
 .site-header .navbar-nav .nav-link {
@@ -81,4 +81,7 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+.container {
+  background-color: #045f11;
 }
