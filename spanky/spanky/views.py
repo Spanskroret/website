@@ -5,3 +5,5 @@ def spanky(request):
     return render(request,'spanky/index.html')
 def nyStudent(request):
     return render(request, 'spanky/nyStudent.html')
+def aktiviteter(request):
+    return render(request, 'spanky/aktiviteter.html')

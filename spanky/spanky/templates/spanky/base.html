@@ -22,14 +22,14 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
         <div class="container">
-            <a class="navbar-brand mr-4" href="/">Spanskrøret</a>
+            <a class="navbar-brand mr-4" href="{% url 'home' %}">Spanskrøret</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarToggle">
                 <div class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link" href="nyStudent/">Ny Student</a>
-                    <a class="nav-item nav-link" href="#">Aktiviteter</a>
+                    <a class="nav-item nav-link" href="{% url 'nyStudent' %}">Ny Student</a>
+                    <a class="nav-item nav-link" href="{% url 'aktiviteter' %}">Aktiviteter</a>
                     <a class="nav-item nav-link" href="#">Kalender</a>
                     <a class="nav-item nav-link" href="#">Butikk</a>
                     <a class="nav-item nav-link" href="#">Kontakt</a>
